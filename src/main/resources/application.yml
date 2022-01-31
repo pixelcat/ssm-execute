@@ -1,0 +1,8 @@
+spring:
+  main:
+    web-application-type: none
+    banner-mode: off
+logging.level:
+  org.dployr.ssm.execute.SsmExecuteApplication: WARN
+  software.amazon.awssdk.profiles.internal.ProfileFileReader: ERROR
+  
