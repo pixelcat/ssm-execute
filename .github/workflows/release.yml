@@ -3,7 +3,7 @@ on:
   release:
     types: [created]
 jobs:
-  release:
+  publish:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -20,4 +20,3 @@ jobs:
         run: mvn --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      
